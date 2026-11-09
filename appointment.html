@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule a Consultation | Doctor Cares Hospital</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <div class="header-outer-wrapper">
+    <header class="site-header" id="site-header">
+      <a href="index.html" class="brand-group" aria-label="Doctor Cares Hospital Home">
+        <div class="brand-emblem" aria-hidden="true">+</div>
+        <div class="logo-text-block">
+          <div class="logo-text"><span>D</span>octor <span>C</span>ares<span style="color:var(--color-midnight)">.</span></div>
+          <div class="logo-location-tag">Abeokuta &bull; Ogun State</div>
+        </div>
+      </a>
+      <nav class="navbar" id="primary-navbar" aria-label="Main Navigation">
+        <ul class="nav-pill-rail">
+          <li><a href="index.html" class="nav-pill-link">Home</a></li>
+          <li><a href="about.html" class="nav-pill-link">About</a></li>
+          <li><a href="services.html" class="nav-pill-link">Services</a></li>
+          <li><a href="doctors.html" class="nav-pill-link">Doctors</a></li>
+          <li><a href="patient-info.html" class="nav-pill-link">Guide</a></li>
+          <li><a href="knowledge.html" class="nav-pill-link">Knowledge</a></li>
+          <li><a href="contact.html" class="nav-pill-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-action-group">
+        <a href="tel:+2349042407509" class="header-phone-chip" title="Direct Clinical Line">
+          <span class="status-pulse-dot" aria-hidden="true"></span>
+          <span>+234 904 240 7509</span>
+        </a>
+        <a href="appointment.html" class="btn btn-teal nav-cta-btn">Book Appointment</a>
+        <button type="button" class="menu-toggle" id="menu-toggle-btn" aria-label="Toggle Navigation">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
+      </div>
+    </header>
+  </div>
+  <div class="nav-backdrop" id="nav-backdrop"></div>
+  <main id="main-content" style="padding: 10rem 0 6rem 0;">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Clinical Scheduling Workspace</span>
+        <h1 class="section-heading">Request a Medical Consultation</h1>
+        <p class="section-sub">Select your specialty, physician, and preferred slot. For acute crises, dial emergency services immediately.</p>
+      </div>
+
+      <div class="facilities-layout">
+        <!-- 6-Step Inline Form Container -->
+        <div class="contact-form-panel">
+          <h3>Appointment Booking Form</h3>
+          <form class="styled-form" id="apptPageForm" onsubmit="event.preventDefault(); alert('Appointment request simulated successfully. Ref ID: DC-2026-' + Math.floor(1000 + Math.random() * 9000)); this.reset();">
+            <div class="form-group">
+              <label class="form-label">Department *</label>
+              <select class="form-control">
+                <option>Paediatric Surgery (Dr. Agbaje Abdulwadud)</option>
+                <option>Clinical Oncology (Dr. Alao Oko Chicken)</option>
+                <option>Paediatrics (Dr. Habeeb Maryamuhu)</option>
+                <option>General Internal Medicine</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Preferred Date *</label>
+                <input type="date" class="form-control" value="2026-03-02" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Preferred Time Window *</label>
+                <select class="form-control">
+                  <option>09:00 AM - 10:00 AM</option>
+                  <option>11:30 AM - 12:30 PM</option>
+                  <option>02:00 PM - 03:00 PM</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Patient Full Name *</label>
+              <input type="text" class="form-control" placeholder="e.g. Sarah Johnson" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Email *</label>
+                <input type="email" class="form-control" placeholder="name@domain.com" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Phone Number *</label>
+                <input type="tel" class="form-control" placeholder="+234 904 240 7509" required>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-teal btn-block">Confirm Appointment Request</button>
+          </form>
+        </div>
+
+        <!-- Sidebar Context Panel -->
+        <div>
+          <div class="contact-card" style="margin-bottom: 2rem;">
+            <h3>Appointment Guidelines</h3>
+            <p>&bull; Arrive 15 minutes prior for vitals assessment.</p>
+            <p>&bull; Bring previous medical records and insurance HMO cards.</p>
+            <p>&bull; Direct Clinical Assistance: <strong>+234 904 240 7509</strong></p>
+          </div>
+          <div class="contact-card">
+            <h3>Campus Location</h3>
+            <p>100 Hospital Way, Medical District, Abeokuta, Ogun State</p>
+            <p><strong>Emergency Entrance:</strong> Gate 2 (24/7)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-container">
+      <div class="footer-col brand-col">
+        <a href="index.html" class="logo footer-logo"><span class="logo-text"><span class="logo-mark">D</span>octor <span>C</span>ares<span class="brand-dot">.</span></span></a>
+        <p class="footer-lead">An internationally oriented healthcare demonstration platform delivering evidence-based clinical consultations, emergency triage, and diagnostic medicine in Abeokuta, Ogun State.</p>
+        <p class="footer-lead" style="color: #cbd5e1;"><strong>Address:</strong> 100 Hospital Way, Medical District, Abeokuta, Ogun State</p>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-title">Clinical Specialties</h3>
+        <ul class="footer-links">
+          <li><a href="services.html">General Internal Medicine</a></li>
+          <li><a href="services.html">Paediatric Surgery</a></li>
+          <li><a href="services.html">Paediatrics &amp; Child Health</a></li>
+          <li><a href="services.html">Clinical Oncology</a></li>
+          <li><a href="services.html">Pathology &amp; Diagnostics</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-title">Patient Resources</h3>
+        <ul class="footer-links">
+          <li><a href="patient-info.html">Preparing for Your Visit</a></li>
+          <li><a href="patient-info.html#visiting">Visiting Hours &amp; Policies</a></li>
+          <li><a href="international.html">International Patient Guide</a></li>
+          <li><a href="emergency.html">Emergency &amp; Gate 2 Trauma</a></li>
+          <li><a href="feedback.html">Share Patient Feedback</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-title">Institutional Governance</h3>
+        <ul class="footer-links">
+          <li><a href="legal.html#privacy">Data Privacy Notice</a></li>
+          <li><a href="legal.html#terms">Terms of Clinical Web Use</a></li>
+          <li><a href="legal.html#accessibility">Accessibility Statement (WCAG 2.2 AA)</a></li>
+          <li><a href="contact.html">Campus Map &amp; Directions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-sub">
+      <div class="container footer-sub-container">
+        <p>&copy; 2026 Doctor Cares Hospital. All rights reserved.</p>
+        <p class="credit-text">Original engineering foundation by <strong>Abdulwadud</strong>. Modernized for international hospital standards.</p>
+      </div>
+    </div>
+  </footer>
+  <button type="button" class="scroll-top-btn" id="scroll-top-btn" aria-label="Back to top">&uarr;</button>
+</body>
+</html>

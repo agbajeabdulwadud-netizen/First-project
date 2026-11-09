@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>International Patient Services | Doctor Cares Hospital</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <div class="header-outer-wrapper">
+    <header class="site-header" id="site-header">
+      <a href="index.html" class="brand-group" aria-label="Doctor Cares Hospital Home">
+        <div class="brand-emblem" aria-hidden="true">+</div>
+        <div class="logo-text-block">
+          <div class="logo-text"><span>D</span>octor <span>C</span>ares<span style="color:var(--color-midnight)">.</span></div>
+          <div class="logo-location-tag">Abeokuta &bull; Ogun State</div>
+        </div>
+      </a>
+      <nav class="navbar" id="primary-navbar" aria-label="Main Navigation">
+        <ul class="nav-pill-rail">
+          <li><a href="index.html" class="nav-pill-link">Home</a></li>
+          <li><a href="about.html" class="nav-pill-link">About</a></li>
+          <li><a href="services.html" class="nav-pill-link">Services</a></li>
+          <li><a href="doctors.html" class="nav-pill-link">Doctors</a></li>
+          <li><a href="patient-info.html" class="nav-pill-link">Guide</a></li>
+          <li><a href="knowledge.html" class="nav-pill-link">Knowledge</a></li>
+          <li><a href="contact.html" class="nav-pill-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-action-group">
+        <a href="tel:+2349042407509" class="header-phone-chip" title="Direct Clinical Line">
+          <span class="status-pulse-dot" aria-hidden="true"></span>
+          <span>+234 904 240 7509</span>
+        </a>
+        <a href="appointment.html" class="btn btn-teal nav-cta-btn">Book Appointment</a>
+        <button type="button" class="menu-toggle" id="menu-toggle-btn" aria-label="Toggle Navigation">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
+      </div>
+    </header>
+  </div>
+  <div class="nav-backdrop" id="nav-backdrop"></div>
+  <main id="main-content" style="padding: 10rem 0 6rem 0;">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Cross-Border Care</span>
+        <h1 class="section-heading">International Patient Liaison &amp; Coordination</h1>
+        <p class="section-sub">A structured, compassionate pathway for patients and families traveling to our Abeokuta campus from across the globe.</p>
+      </div>
+
+      <div class="intl-pathway-grid">
+        <div class="pathway-step"><div class="step-badge">Step 1</div><h3 class="step-title">Records Intake</h3><p class="step-desc">Submit clinical records for pre-travel physician review.</p></div>
+        <div class="pathway-step"><div class="step-badge">Step 2</div><h3 class="step-title">Treatment Plan</h3><p class="step-desc">Receive a personalized consultation proposal and duration estimate.</p></div>
+        <div class="pathway-step"><div class="step-badge">Step 3</div><h3 class="step-title">Arrival Support</h3><p class="step-desc">Dedicated liaison assistance and prioritized diagnostics.</p></div>
+        <div class="pathway-step"><div class="step-badge">Step 4</div><h3 class="step-title">Continuity</h3><p class="step-desc">Comprehensive reports and remote consultations upon returning home.</p></div>
+      </div>
+
+      <div class="contact-form-panel" style="max-width: 700px; margin: 3rem auto;">
+        <h3>International Clinical Inquiry Intake</h3>
+        <form class="styled-form" id="intlForm" onsubmit="event.preventDefault(); alert('Inquiry recorded in demonstration mode. An international liaison coordinator will respond within 48 hours.'); this.reset();">
+          <div class="form-group">
+            <label class="form-label">Patient Full Name *</label>
+            <input type="text" class="form-control" placeholder="e.g. Jean Dupont" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Country of Origin *</label>
+              <input type="text" class="form-control" placeholder="e.g. United Kingdom, Ghana, USA" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Primary Language *</label>
+              <select class="form-control">
+                <option>English</option><option>French (Français)</option><option>Arabic (العربية)</option><option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Email *</label>
+              <input type="email" class="form-control" placeholder="name@domain.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">WhatsApp / International Phone *</label>
+              <input type="tel" class="form-control" placeholder="+44 7700 900077" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Clinical Department Needed *</label>
+            <select class="form-control">
+              <option>Paediatric Surgery (Dr. Agbaje)</option>
+              <option>Clinical Oncology (Dr. Alao)</option>
+              <option>Paediatrics (Dr. Habeeb)</option>
+              <option>General Internal Medicine</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-teal btn-block">Transmit International Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-container">
+      <div class="footer-col brand-col">
+        <a href="index.html" class="logo footer-logo"><span class="logo-text"><span class="logo-mark">D</span>octor <span>C</span>ares<span class="brand-dot">.</span></span></a>
+        <p class="footer-lead">An internationally oriented healthcare demonstration platform delivering evidence-based clinical consultations, emergency triage, and diagnostic medicine in Abeokuta, Ogun State.</p>
+        <p class="footer-lead" style="color: #cbd5e1;"><strong>Address:</strong> 100 Hospital Way, Medical District, Abeokuta, Ogun State</p>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-title">Clinical Specialties</h3>
+        <ul class="footer-links">
+          <li><a href="services.html">General Internal Medicine</a></li>
+          <li><a href="services.html">Paediatric Surgery</a></li>
+          <li><a href="services.html">Paediatrics &amp; Child Health</a></li>
+          <li><a href="services.html">Clinical Oncology</a></li>
+          <li><a href="services.html">Pathology &amp; Diagnostics</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-title">Patient Resources</h3>
+        <ul class="footer-links">
+          <li><a href="patient-info.html">Preparing for Your Visit</a></li>
+          <li><a href="patient-info.html#visiting">Visiting Hours &amp; Policies</a></li>
+          <li><a href="international.html">International Patient Guide</a></li>
+          <li><a href="emergency.html">Emergency &amp; Gate 2 Trauma</a></li>
+          <li><a href="feedback.html">Share Patient Feedback</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-title">Institutional Governance</h3>
+        <ul class="footer-links">
+          <li><a href="legal.html#privacy">Data Privacy Notice</a></li>
+          <li><a href="legal.html#terms">Terms of Clinical Web Use</a></li>
+          <li><a href="legal.html#accessibility">Accessibility Statement (WCAG 2.2 AA)</a></li>
+          <li><a href="contact.html">Campus Map &amp; Directions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-sub">
+      <div class="container footer-sub-container">
+        <p>&copy; 2026 Doctor Cares Hospital. All rights reserved.</p>
+        <p class="credit-text">Original engineering foundation by <strong>Abdulwadud</strong>. Modernized for international hospital standards.</p>
+      </div>
+    </div>
+  </footer>
+  <button type="button" class="scroll-top-btn" id="scroll-top-btn" aria-label="Back to top">&uarr;</button>
+</body>
+</html>
